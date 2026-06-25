@@ -1,1 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fronteiras em Chamas: Conflitos e Território</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f0;
+            --text-color: #111;
+            --accent-red: #d32f2f;
+            --accent-yellow: #fbc02d;
+            --border-style: 3px solid #111;
+        }
 
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--accent-red);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: var(--border-style);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0px var(--text-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0 0;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border: var(--border-style);
+            padding: 20px;
+            box-shadow: 5px 5px 0px #111;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #111;
+        }
+
+        .card h2 {
+            margin-top: 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--text-color);
+            padding-bottom: 5px;
+            color: var(--accent-red);
+        }
+
+        .highlight-box {
+            background-color: var(--accent-yellow);
+            border: var(--border-style);
+            padding: 15px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Seção do Manifesto / Padlet */
+        .manifesto-section {
+            margin-top: 40px;
+            border: var(--border-style);
+            background: #fff;
+            padding: 30px;
+            box-shadow: 8px 8px 0px var(--accent-red);
+        }
+
+        .manifesto-section h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            background: var(--text-color);
+            color: white;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .padlet-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            border: var(--border-style);
+            margin-top: 20px;
+            background: #eee;
+        }
+
+        .padlet-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 5px;
+            border-top: var(--border-style);
+            background: var(--text-color);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fronteiras em Chamas</h1>
+        <p>Conflitos, Território e a Estética do Manifesto</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="card">
+            <h2>O Território em Disputa</h2>
+            <p>Bem-vindo ao pavilhão digital. Aqui, a história do Sul do Brasil se choca com a visualidade contemporânea. Analisamos como a terra, as ferrovias e a economia moldaram fronteiras de sangue e resistência.</p>
+        </div>
+
+        <div class="grid-layout">
+            <div class="card">
+                <h2>Revolução Federalista</h2>
+                <h3>O Cerco da Lapa (1894)</h3>
+                <p>A resistência que mudou os rumos da República. Durante 26 dias, forças legalistas pararam o avanço dos maragatos em território paranaense. Um confronto violento que consolidou fronteiras políticas ideológicas fundamentais para o Estado.</p>
+            </div>
+
+            <div class="card">
+                <h2>Guerra do Contestado</h2>
+                <h3>(1912 – 1916)</h3>
+                <p>O choque entre o messianismo, a população despojada de suas terras e o poder do Estado associado ao capital estrangeiro. Uma guerra civil na fronteira rica e contestada entre Paraná e Santa Catarina.</p>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            Eixos de Conflito: A construção da Estrada de Ferro São Paulo-Rio Grande expulsou camponeses e desencadeou a exploração predatória da economia da madeira, transformando a geografia regional em um barril de pólvora.
+        </div>
+
+        <div class="manifesto-section">
+            <h2>Galeria Manifesto: Colagem Urbana</h2>
+            <p>Inspirado na estética pop/conceitual do artista paraense <strong>Emmanuel Nassar</strong>, este espaço utiliza a colagem digital e símbolos icônicos do Paraná da época (o pinhão, a erva-mate, o trem, o arame farpado) subvertidos pelo choque da geopolítica da guerra.</p>
+            
+            <div class="padlet-container">
+                <iframe src="https://padlet.com/SEU_USER/SEU_PADLET_ID" allow="camera; microphone; geolocation"></iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Exposição Virtual Interativa — Desenvolvido para o Projeto "Fronteiras em Chamas"</p>
+    </footer>
+
+</body>
+</html>
